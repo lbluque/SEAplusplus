@@ -1,0 +1,48 @@
+# in EC327, we use the g++ compiler
+# therefore, we define the GCC variable 
+GCC = g++
+
+PA4: PA4.o Fish.o Cave.o CartPoint.o CartVector.o GameObject.o CoralReef.o Model.o GameCommand.o View.o Tuna.o Shark.o Sharknado.o
+	     $(GCC) PA4.o Fish.o Cave.o CartPoint.o CartVector.o GameObject.o CoralReef.o Model.o GameCommand.o View.o Tuna.o Shark.o Sharknado.o -o PA4
+
+PA4.o: PA4.cpp
+		$(GCC) -c PA4.cpp
+
+CartPoint.o: CartPoint.cpp
+	     $(GCC) -c CartPoint.cpp
+
+CartVector.o: CartVector.cpp
+	      $(GCC) -c CartVector.cpp
+
+GameObject.o: GameObject.cpp
+	      $(GCC) -c GameObject.cpp
+
+CoralReef.o: CoralReef.cpp
+	     $(GCC) -c CoralReef.cpp
+
+Cave.o: Cave.cpp
+	$(GCC) -c Cave.cpp
+
+Fish.o: Fish.cpp
+	$(GCC) -c Fish.cpp
+
+Model.o: Model.cpp
+	$(GCC) -c Model.cpp
+
+GameCommand.o: GameCommand.cpp
+	$(GCC) -c GameCommand.cpp
+
+View.o: View.cpp
+	$(GCC) -c View.cpp
+
+Tuna.o: Tuna.cpp
+	$(GCC) -c Tuna.cpp
+
+Shark.o: Shark.cpp
+	$(GCC) -c Shark.cpp
+
+Sharknado.o: Sharknado.cpp
+	$(GCC) -c Sharknado.cpp
+
+clean:	   
+	   rm *.o PA4

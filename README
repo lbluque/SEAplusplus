@@ -1,0 +1,25 @@
+Username: lbluque
+
+For each question keep either Y for Yes or N for No. Remove the other letter. 
+1) My code compiles. Y
+2) I used a diff tool to match my output to the sample output. Y (discrepancies explained below)
+3) I implemented and tested Tuna functionality (Step 1). Y
+4) I implemented and tested Shark functionality (Step 1). Y
+5) I refactored the model using STL (Step 2). Y
+6) I implemented and tested Exceptions (Step 3). Y
+7) I enabled creation of new objects during program execution (Step 4). Y
+8) I implemented persistent objects (Step 5). Y
+9) I implemented and tested Sharknado (Step 6). Y
+
+Additional Comments:
+Minor discrepancies with sample output include:
+1) Extra empty character in grid. Just the way I print my grid
+2) Show status order of objects. My objects are always ordered in ascending order withing their respective lists, therefore show status
+   prints status's in that order.
+3) After the game is restored at time 26 T1 finds a mate then mating proceeds as described (2 time ticks and what not). In the sample 
+   output a new tuna T5 is born instantly at time 26. Everything after that shows substantial differences because of this.
+
+*Last thing: My sharks can swim. Made no sense why they couldn't. Sharks even swim in their sleep.
+
+Thank you! Please include this file with your PA4 Blackboard Submission.
+
